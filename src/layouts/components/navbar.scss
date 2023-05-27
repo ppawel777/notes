@@ -1,0 +1,27 @@
+.top-nav {
+  display: flex;
+  align-items: center;
+}
+.top-nav-items {
+  list-style-type: none;
+  padding: 0;
+}
+.top-nav-items li {
+  display: inline;
+}
+.top-nav-items li a {
+  margin: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #cfdba3;
+  border-radius: 12px;
+  &:hover { background-color: #a5ad86; }
+  &:focus { color: inherit; }
+}
+
+@media screen and (max-width: 767px) {
+  .top-nav-items li {
+    display: inline-block;
+    margin: 20px;
+  }
+}
