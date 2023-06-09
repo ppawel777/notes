@@ -1,0 +1,19 @@
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.sider_wrap {
+  overflow: auto;
+  height: '100vh';
+  position: 'fixed';
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-right: 1px solid #dadada;
+}
+
+.container_wrap { 
+  overflow: auto;
+  background-color: #FFFF;
+}

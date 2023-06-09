@@ -1,0 +1,26 @@
+.workspace_content {
+  background-color: #FFFF;
+  padding: 8px 28px 16px 28px;
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 6px;
+  }
+  &__date {
+    color: #b3b3b8;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: -6px;
+  }
+  &__editor {
+    .CodeMirror-wrap { 
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+// CodeMirror-wrap

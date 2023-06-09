@@ -15,8 +15,8 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,txt,woff2}']
       },
       manifest: {
-        name: 'RickAndMorty',
-        short_name: 'R&M',
+        name: 'Notes-Lite',
+        short_name: 'NL',
         // start_url: '/',
         display: 'standalone',
         background_color: '#f1f6d9',

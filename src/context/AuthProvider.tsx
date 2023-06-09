@@ -2,20 +2,18 @@ import { createContext, useContext, useState } from "react"
 
 const AuthContext = createContext(null);
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => useContext(AuthContext);
 
-// eslint-disable-next-line react/prop-types
-export const AuthProvider = ({ children }) => {
+export const AuthProvider = ({ children }: any) => {
   const [user, setUser] = useState(() => localStorage.getItem('user') || null)
 
-  const signin = (newUser, callback) => {
+  const signin = (newUser: string, callback:() => void) => {
     setUser(newUser)
     localStorage.setItem('user', newUser)
     callback();
   }
 
-  const signout = (callback) => {
+  const signout = (callback:() => void) => {
     setUser(null)
     localStorage.removeItem('user')
     callback();
@@ -26,7 +24,10 @@ export const AuthProvider = ({ children }) => {
     signin,
     signout
   }
+
   return (
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
     <AuthContext.Provider value={ value }>
       { children }
     </AuthContext.Provider>
