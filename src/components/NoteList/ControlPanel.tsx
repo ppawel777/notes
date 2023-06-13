@@ -25,7 +25,8 @@ const ControlPanel = () => {
 
   const handleAddNote = async () => {
     const new_id = await notes.add({
-      id: Math.random(),
+      // id: Math.random(),
+      id: +moment().format('x'),
       name: 'Новая заметка',
       created: moment().format(),
       content: ''

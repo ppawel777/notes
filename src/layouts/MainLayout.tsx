@@ -15,6 +15,7 @@ const { Content, Sider } = Layout
 const MainLayout = () => {
   const [noteId, setNoteId] = useState<number>(0);
   const noteList = useLiveQuery(() => notes.toArray(), [notes]) || [];
+  console.log('noteList', noteList)
 
   return (
     <Layout className='container'>
